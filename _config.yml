@@ -8,10 +8,9 @@
 # Site settings
 title: Daniel Liu
 email: idaniel.liu@gmail.com
-# description: > # this means to ignore newlines until "baseurl:"
 description: Software engineer, web developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://danielliu.me" # the base hostname & protocol for your site
+url: "https://danielliu.me"
 
 permalink: /blog/:year/:month/:day/:title/
 timezone: America/Los_Angeles
@@ -19,11 +18,8 @@ sass:
   style: compressed
 
 # Connections
-# twitter_username: djsnoops
 github_username: danieliu
 linkedin_username: idanielliu
-# instagram_username: danieliu
-# facebook_username: danieliu
 
 # Serving
 port: 4000
@@ -33,3 +29,10 @@ host: 0.0.0.0
 markdown: kramdown
 exclude:
   - node_modules
+
+plugins:
+    - jekyll-minifier
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true

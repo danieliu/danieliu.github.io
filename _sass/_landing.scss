@@ -1,72 +1,70 @@
 .landing {
-    height: 100vh;
+  height: 100vh;
 }
 
 .front-content {
-	text-align: center;
-	position: relative;
-	top: 40%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .name {
-	font-size: 3.4rem;
-	font-weight: 600;
-	line-height: 80px;
-	margin-bottom: 10px;
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 80px;
+  margin-bottom: 10px;
 
-	span {
-		color: $grey-darken-1;
-		font-weight: 100;
-	}
+  span {
+    color: $grey-darken-1;
+    font-weight: 100;
+  }
 }
-
 
 // Social media accounts
 .connect {
-	margin: 0 0 30px;
+  margin: 0 0 30px;
 
-	li {
-		list-style-type: none;
-		display: inline-block;
-		margin: 0 10px;
-	}
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
 
-	a {
-		i {
-			@include transition(transform 0.2s);
-		}
+  a {
+    i {
+      @include transition(transform 0.2s);
+    }
 
-		&:hover i {
-			@include transform(scale(1.3));
-		}
-	}
+    &:hover i {
+      @include transform(scale(1.3));
+    }
+  }
 }
-
 
 // Fix AdblockPlus filter by using renamed class
 .twit {
-	&:before {
-		content: "\f099";
-	}
+  &:before {
+    content: "\f099";
+  }
 }
 
 .linkedin {
-	&:before {
-		content: "\f0e1";
-	}
+  &:before {
+    content: "\f0e1";
+  }
 }
 
 .fbook {
-	&:before {
-		content: "\f09a";
-	}
+  &:before {
+    content: "\f09a";
+  }
 }
 
 .insta {
-	&:before {
-		content: "\f16d";
-	}
+  &:before {
+    content: "\f16d";
+  }
 }

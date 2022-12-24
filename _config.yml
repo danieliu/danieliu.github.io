@@ -25,10 +25,11 @@ linkedin_username: idanielliu
 # instagram_username: danieliu
 # facebook_username: danieliu
 
-
 # Serving
 port: 4000
 host: 0.0.0.0
 
 # Build settings
 markdown: kramdown
+exclude:
+  - node_modules

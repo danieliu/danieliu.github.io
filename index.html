@@ -2,32 +2,47 @@
 layout: default
 og_image_url: https://danielliu.me/cover_photo.jpg
 ---
+
 <main class="landing">
   <section class="front-content">
     <h1 class="name"><span>daniel</span> liu</h1>
     <ul class="connect">
       {% if site.twitter_username %}
-        <li><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-lg twit"></i></a></li>
-      {% endif %}
-
-      {% if site.github_username %}
-        <li><a href="https://github.com/{{ site.github_username }}"><i class="fa fa-lg fa-github-alt"></i></a></li>
-      {% endif %}
-
-      {% if site.linkedin_username %}
-      <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fa fa-lg linkedin"></i></a></li>
-      {% endif %}
-
-      {% if site.email %}
-      <li><a href="mailto:{{ site.email }}"><i class="fa fa-lg fa-envelope"></i></a></li>
-      {% endif %}
-
-      {% if site.facebook_username %}
-        <li><a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-lg fbook"></i></a></li>
-      {% endif %}
-
-      {% if site.instagram_username %}
-        <li><a href="https://www.instagram.com/{{ site.instagram_username }}"><i class="fa fa-lg insta"></i></a></li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}"
+          ><i class="fa fa-lg twit"></i
+        ></a>
+      </li>
+      {% endif %} {% if site.github_username %}
+      <li>
+        <a href="https://github.com/{{ site.github_username }}"
+          ><i class="fa fa-lg fa-github-alt"></i
+        ></a>
+      </li>
+      {% endif %} {% if site.linkedin_username %}
+      <li>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
+          ><i class="fa fa-lg linkedin"></i
+        ></a>
+      </li>
+      {% endif %} {% if site.email %}
+      <li>
+        <a href="mailto:{{ site.email }}"
+          ><i class="fa fa-lg fa-envelope"></i
+        ></a>
+      </li>
+      {% endif %} {% if site.facebook_username %}
+      <li>
+        <a href="https://www.facebook.com/{{ site.facebook_username }}"
+          ><i class="fa fa-lg fbook"></i
+        ></a>
+      </li>
+      {% endif %} {% if site.instagram_username %}
+      <li>
+        <a href="https://www.instagram.com/{{ site.instagram_username }}"
+          ><i class="fa fa-lg insta"></i
+        ></a>
+      </li>
       {% endif %}
     </ul>
   </section>

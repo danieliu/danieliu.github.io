@@ -1,16 +1,28 @@
-<meta name="theme-color" content="{% if page.theme_color %}{{ page.theme_color }}{% else %}#80cbc4{% endif %}">
+<meta
+  name="theme-color"
+  content="{% if page.theme_color %}{{ page.theme_color }}{% else %}#80cbc4{% endif %}"
+/>
 
-<meta name="description" content="{% if page.og_description %}{{ page.og_description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@djsnoops">
+<meta
+  name="description"
+  content="{% if page.og_description %}{{ page.og_description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@djsnoops" />
 
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:url" content="{{ page.url | prepend: site.url }}">
-<meta property="og:site_name" content="danielliu.me">
-<meta property="og:type" content="article">
+<meta
+  property="og:title"
+  content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+/>
+<meta property="og:url" content="{{ page.url | prepend: site.url }}" />
+<meta property="og:site_name" content="danielliu.me" />
+<meta property="og:type" content="article" />
 
 {% if page.og_image_url %}
-<meta property="og:image" content="{{ page.og_image_url }}">
+<meta property="og:image" content="{{ page.og_image_url }}" />
 {% endif %}
 
-<meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}">
+<meta
+  property="og:description"
+  content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}"
+/>

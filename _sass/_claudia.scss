@@ -1,75 +1,75 @@
 .main-countdown {
-    height: 100vh;
-    @include flexbox;
-    @include flex(1);
-    @include align-items(center);
-    @include justify-content(center);
+  height: 100vh;
+  @include flexbox;
+  @include flex(1);
+  @include align-items(center);
+  @include justify-content(center);
 }
 
 .countdown {
-    @include flexbox;
-    @include flex(1);
-    @include align-items(center);
-    @include justify-content(center);
-    font-size: 2.5rem;
-    flex-direction: column;
+  @include flexbox;
+  @include flex(1);
+  @include align-items(center);
+  @include justify-content(center);
+  font-size: 2.5rem;
+  flex-direction: column;
 }
 
 .end-date {
-    @include flexbox;
-    @include flex(1);
-    @include align-items(center);
-    @include justify-content(center);
+  @include flexbox;
+  @include flex(1);
+  @include align-items(center);
+  @include justify-content(center);
 
+  & > div {
+    margin: 0 7px;
+    line-height: 1.2;
+  }
+
+  .count {
+    font-size: 3.3rem;
+  }
+
+  .seconds-count {
+    color: $brand-color;
+  }
+
+  .label {
+    font-size: 1.1rem;
+    color: $grey;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 5px;
+  }
+
+  @include media-query($medium-and-up) {
     & > div {
-        margin: 0 7px;
-        line-height: 1.2;
+      margin: 0 25px;
     }
 
     .count {
-        font-size: 3.3rem;
-    }
-
-    .seconds-count {
-        color: $brand-color;
+      font-size: 7rem;
     }
 
     .label {
-        font-size: 1.1rem;
-        color: $grey;
-        font-weight: 300;
-        text-align: right;
-        padding-right: 5px;
+      font-size: 1.4rem;
     }
-
-    @include media-query($medium-and-up) {
-        & > div {
-            margin: 0 25px;
-        }
-
-        .count {
-            font-size: 7rem;
-        }
-
-        .label {
-            font-size: 1.4rem;
-        }
-    }
+  }
 }
 
 .vid-container {
-    @include flexbox;
-    margin-bottom: 30px;
+  @include flexbox;
+  margin-bottom: 30px;
 }
 
 .message {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-top: 5px;
-    color: $brand-color;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 5px;
+  color: $brand-color;
 
-    @include media-query($medium-and-up) {
-        margin-top: 15px;
-        font-size: 1.3rem;
-    }
+  @include media-query($medium-and-up) {
+    margin-top: 15px;
+    font-size: 1.3rem;
+  }
 }

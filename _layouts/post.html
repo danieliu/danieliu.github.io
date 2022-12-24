@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
+
 <section class="posts">
-	<article class="post single">
-		<header>
-			<h1 class="post-title">{{ page.title }}</h3>
-			<time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%-d %b %Y" }}</time>
-		</header>
-		<p>{{ page.content | strip_html | truncate: 250, '...' }}</p>
-	</article>
+  <article class="post single">
+    <header>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <time datetime="{{ page.date | date: '%F' }}"
+        >{{ page.date | date: "%-d %b %Y" }}</time
+      >
+    </header>
+    <p>{{ page.content | strip_html | truncate: 250, '...' }}</p>
+  </article>
 </section>

@@ -2,7 +2,7 @@
 
 ## Requirements
 
-* ruby `2.6.6`
+- ruby `2.6.6`
 
 ## Install/Run
 

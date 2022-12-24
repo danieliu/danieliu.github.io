@@ -1,72 +1,74 @@
 @include media-query($medium-and-up) {
-	.posts {
-		max-width: 760px;
-	}
+  .posts {
+    max-width: 760px;
+  }
 }
 
 .post {
-	padding: 50px 0;
-	border-bottom: 1px solid $grey-lighten-4;
+  padding: 50px 0;
+  border-bottom: 1px solid $grey-lighten-4;
 
-	&:last-child {
-		border: none;
-	}
+  &:last-child {
+    border: none;
+  }
 
-	.post-title {
-		font-size: 2.4rem;
-		font-weight: 600;
-		margin-bottom: 0;
-		color: $text-color;
+  .post-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: $text-color;
 
-		a {
-			color: inherit;
-			position: relative;
-			transition: color 0.3s;
+    a {
+      color: inherit;
+      position: relative;
+      transition: color 0.3s;
 
-			&:before {
-				content: '';
-				display: block;
-				position: absolute;
-				bottom: 1px;
-				left: 0;
-				height: 3px;
-				width: 100%;
-				background-color: $brand-color;
-				@include transform-origin((right top));
-				@include scale((0, 1));
-				@include transition(transform 0.25s ease-in-out);
-			}
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $brand-color;
+        @include transform-origin((right top));
+        @include scale((0, 1));
+        @include transition(transform 0.25s ease-in-out);
+      }
 
-			&:hover, &:focus {
-				color: $brand-color;
-			}
+      &:hover,
+      &:focus {
+        color: $brand-color;
+      }
 
-			&:hover:before, &:focus:before {
-				@include transform-origin((left top));
-				@include scale((1, 1));
-			}
-		}
-	}
+      &:hover:before,
+      &:focus:before {
+        @include transform-origin((left top));
+        @include scale((1, 1));
+      }
+    }
+  }
 
-	p {
-		margin: 10px 0;
-	}
+  p {
+    margin: 10px 0;
+  }
 
-	time {
-		color: $grey-lighten-2;
-		font-size: 0.9rem;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
+  time {
+    color: $grey-lighten-2;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 }
 
 .single {
-	header {
-		margin-bottom: 25px;
-	}
+  header {
+    margin-bottom: 25px;
+  }
 
-	.post-title {
-		font-size: 3.3rem;
-		line-height: 1.1;
-	}
+  .post-title {
+    font-size: 3.3rem;
+    line-height: 1.1;
+  }
 }

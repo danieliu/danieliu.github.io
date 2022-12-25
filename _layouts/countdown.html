@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<main class="main-countdown">
+  <section class="countdown {{ page.action }}">
+    <time class="end-date" datetime="{{ page.datetime }}">
+      <div class="days">
+        <div class="count days-count"></div>
+        <h2 class="label"></h2>
+      </div>
+      <div class="hours">
+        <div class="count hours-count"></div>
+        <h2 class="label"></h2>
+      </div>
+      <div class="minutes">
+        <div class="count minutes-count"></div>
+        <h2 class="label"></h2>
+      </div>
+      <div class="seconds">
+        <div class="count seconds-count"></div>
+        <h2 class="label"></h2>
+      </div>
+    </time>
+    <span class="message {{ page.action }}"></span>
+  </section>
+</main>
+{{ page.content }}
+<script>
+  const claudiaAction = "{{ page.action }}";
+</script>
+<script src="{{ '/js/claudia.js' | prepend: site.baseurl }}"></script>

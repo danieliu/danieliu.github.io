@@ -31,7 +31,7 @@ exclude:
   - node_modules
 
 plugins:
-    - jekyll-minifier
+  - jekyll-minifier
 
 jekyll-minifier:
   uglifier_args:

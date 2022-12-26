@@ -87,7 +87,7 @@ const claudiaCountdown = () => {
       )}`,
       messageBefore: "until Claudia returns... ⏳",
       messageAfter: "since Claudia came back! 🎉🎉",
-      date: new Date("Mon Dec 26 2022 18:55:26 PDT"),
+      date: new Date("Mon Dec 26 2022 07:00:00 PDT"),
     },
   };
 

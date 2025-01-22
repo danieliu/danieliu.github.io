@@ -7,7 +7,7 @@
 
 # Site settings
 title: Daniel Liu
-email: idaniel.liu@gmail.com
+email: ""
 description: Software engineer, web developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://danielliu.me"
